@@ -24,6 +24,8 @@ namespace StudentAPI.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+            public DbSet<Student> Students { get; set; }
+    
 
         public static ApplicationDbContext Create()
         {
